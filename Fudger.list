@@ -1,0 +1,39 @@
+%product Fudger
+%copyright 2009 by Sveinung F.
+%vendor Sveinung F.
+%description A small GM tool for Fudge and Gurps
+%version 0.2
+%readme README
+%license LICENSE
+%requires ruby ruby-gtk libgtk-mozembed-ruby libgettext-ruby libzip-ruby
+%postinstall if which update-mime-database>/dev/null 2>&1; then update-mime-database /usr/share/mime; fi
+%postinstall if which update-desktop-database>/dev/null 2>&1; then update-desktop-database /usr/share/applications; fi
+%postinstall if which update-icon-caches>/dev/null 2>&1; then update-icon-caches /usr/share/icons/gnome/; fi
+%postremove if which update-icon-caches>/dev/null 2>&1; then update-icon-caches /usr/share/icons/gnome/; fi
+%postremove if which update-mime-database>/dev/null 2>&1; then update-mime-database /usr/share/mime; fi
+%postremove if which update-desktop-database>/dev/null 2>&1; then update-desktop-database /usr/share/applications; fi
+f 644 root sys /usr/lib/Fudger lib/*.rb
+f 644 root sys /usr/lib/Fudger/rules/ lib/rules/*.xml
+f 644 root sys /usr/lib/Fudger/names lib/names/*.yml
+f 644 root sys /usr/lib/Fudger/images lib/images/*.png
+f 644 root sys /usr/lib/Fudger/ui/fudger-gtk/fudger.ui lib/ui/fudger-gtk/fudger.ui
+f 644 root sys /usr/lib/Fudger/ui/fudger-gtk/*.rb
+f 644 root sys /usr/lib/Fudger/ui/fudger-swing/fudger_swing_ui.jar lib/ui/fudger-swing/fudger_swing_ui.jar
+f 644 root sys /usr/lib/Fudger/ui/fudger-swing/*.rb
+f 644 root sys /usr/lib/Fudger/stylesheets lib/stylesheets/*.css
+f 644 root sys /usr/lib/Fudger/doc/ lib/doc/*.html
+f 644 root sys /usr/lib/Fudger/doc/ lib/doc/*.png
+f 755 root sys /usr/bin/fudger bin/fudger
+f 644 root sys /usr/share/applications/fudger.desktop share/applications/fudger.desktop
+f 644 root sys /usr/share/mime/packages/fudger.xml share/mime/packages/fudger.xml
+f 644 root sys /usr/share/mime-info/fudger.mime share/mime-info/fudger.mime
+f 644 root sys /usr/share/mime-info/fudger.keys share/mime-info/fudger.keys
+f 644 root sys /usr/share/application-registry/fudger.application share/application-registry/fudger.application
+f 644 root sys /usr/share/icons/gnome/48x48/apps/fudger.png share/icons/gnome/48x48/apps/fudger.png
+f 644 root sys /usr/share/icons/gnome/48x48/mimetypes/gnome-mime-text-fudger-campaign.png share/icons/gnome/48x48/mimetypes/gnome-mime-text-fudger-campaign.png
+f 644 root sys /usr/share/locale/nb/LC_MESSAGES/fudger.mo share/locale/nb/LC_MESSAGES/fudger.mo
+f 644 root sys /usr/share/locale/nb/LC_MESSAGES/fudger_ui.mo share/locale/nb/LC_MESSAGES/fudger_ui.mo
+
+%subpackage plugins
+%description Fudger plugins
+f 644 root sys /usr/lib/Fudger/plugins lib/plugins/*.rb

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<book>
+	<title>Fudger help</title>
+	<preface>
+		<title>Preface</title>
+		<para>Fudger is a tool for helping table-top roleplaying gamemasters keep track of their campaigns. It is primarily designed for Fudge, and as such is not really intended as a "numbercruncher", but rather an idea organizer.</para>
+		<para>Fudger is written in Ruby and requires ruby-gtk libzip-ruby ruby-gtkmozembed and ruby-gettext in order to run.</para>
+	</preface>
+	<chapter>
+		<title>Using Fudger</title>
+		<section>
+			<title>Starting a new campaign</title>
+			<para>When creating a new campaign, you will be presented with the properties dialog as shown in the screenshot below. Choose your campaigns name, which ruleset you want to use, and which name-generators you want to use. Depending on the ruleset other options might be available.</para>
+			<screenshot>
+	 			<mediaobject>
+					<imageobject>
+						<imagedata fileref="properties_dialog.png"/>
+					</imageobject>
+				</mediaobject>
+			</screenshot>
+		</section>
+		<section>
+			<title>Working with campaigns</title>
+			<para></para>
+			<section>
+				<title>Working with elements</title>
+				<para></para>
+			</section>
+			<section>
+				<title>The description editors</title>
+				<para>When the name of another element is entered into a description, a link is established between the two elements. In the screenshot below, Frodo is automaticly linked to both Bilbo and Bag End. Since he is now accosiatied with Bag End he will appear under it in the character chooser on the left.</para>
+			<screenshot>
+	 			<mediaobject>
+					<imageobject>
+						<imagedata fileref="fudger_links.png"/>
+					</imageobject>
+				</mediaobject>
+			</screenshot>
+			<para>By choosing some text and right clicking on it, a menu is brought up which is used for making the text known to the public. In this menu there is also entries for adding new elements, named after the chosen text.</para>
+			<screenshot>
+	 			<mediaobject>
+					<imageobject>
+						<imagedata fileref="public_knowledge.png"/>
+					</imageobject>
+				</mediaobject>
+			</screenshot>
+			</section>
+		</section>
+		<section>
+			<title>Plugins</title>
+			<para></para>
+		</section>
+	</chapter>
+	<chapter>
+		<title>Extending Fudger</title>
+		<section>
+			<title>Adding name generators</title>
+			<para></para>
+        </section>
+		<section>
+			<title>Adding rule-systems</title>
+			<para>The rule system implementation is currently rather primitive, and will be changed, so don't do this..</para>
+        </section>
+		<section>
+			<title>Writing plugins</title>
+			<para>Fudger's API is in a state of constant change, so I would recoment you wait until it is a bit more stable.</para>
+        </section>
+	</chapter>
+</book>

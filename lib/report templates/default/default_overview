@@ -1,0 +1,7 @@
+<div id='overview'><h1><fudger>name</fudger></h1>
+<fudger>overview</fudger>
+<each id='images'>
+<if statement='$campaign.overview.slice(item.name)'>
+<include>default_image</include>
+</if>
+</each>

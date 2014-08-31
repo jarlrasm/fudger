@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<system id="Gurps Lite" css="gurps_report.css">
+    <array id="attributes" modify_keys="False">
+        <default_key id="Strength"/>
+        <default_key id="Dexterity"/>
+        <default_key id="Intelligence"/>
+        <default_key id="Health"/>
+    </array>
+    <translator id="basic_speed_translator">
+        <key id="0" value="value">
+            <div>
+                <sum>
+                    <calculate_from id="Strength"/>
+                    <calculate_from id="Dexterity"/>
+                </sum>
+                <number id="4"/>
+            </div>
+        </key>
+
+    </translator>
+    <translator id="basic_move_translator">
+        <key id="0" value="value">
+            <rounddown>
+                <div>
+                    <sum>
+                        <calculate_from id="Strength"/>
+                        <calculate_from id="Dexterity"/>
+                    </sum>
+                    <number id="4"/>
+                </div>
+            </rounddown>
+        </key>
+
+    </translator>
+    <translator id="dodge_translator">
+        <key id="0" value="value">
+            <sum>
+                <rounddown>
+                    <div>
+                        <sum>
+                            <calculate_from id="Strength"/>
+                            <calculate_from id="Dexterity"/>
+                        </sum>
+                        <number id="4"/>
+                    </div>
+                </rounddown>
+                <number id="3"/>
+            </sum>
+        </key>
+
+    </translator>
+    <translator id="thrust_translator">
+        <key id="3" value="1d-5"/>
+        <key id="4" value="1d-5"/>
+        <key id="5" value="1d-4"/>
+        <key id="6" value="1d-4"/>
+        <key id="7" value="1d-3"/>
+        <key id="8" value="1d-3"/>
+        <key id="9" value="1d-2"/>
+        <key id="10" value="1d-2"/>
+        <key id="11" value="1d-1"/>
+        <key id="12" value="1d-1"/>
+        <key id="13" value="1d"/>
+        <key id="14" value="1d"/>
+        <key id="15" value="1d+1"/>
+        <key id="16" value="1d+1"/>
+        <key id="17" value="1d+2"/>
+        <key id="18" value="1d+2"/>
+
+    </translator>
+    <translator id="swing_translator">
+        <key id="3" value="1d-4"/>
+        <key id="4" value="1d-4"/>
+        <key id="5" value="1d-3"/>
+        <key id="6" value="1d-3"/>
+        <key id="7" value="1d-2"/>
+        <key id="8" value="1d-2"/>
+        <key id="9" value="1d-1"/>
+        <key id="10" value="1d"/>
+        <key id="11" value="1d+1"/>
+        <key id="12" value="1d+2"/>
+        <key id="13" value="2d-1"/>
+        <key id="14" value="2d"/>
+        <key id="15" value="2d+1"/>
+        <key id="16" value="2d+2"/>
+        <key id="17" value="3d-1"/>
+        <key id="18" value="3d"/>
+
+    </translator>
+    <translator id="gurps_translator" key_table="skill_table">
+        <key id="0" default_value="0 points" value="formula = value (0)">
+            <sum>
+                <calculate_from id="default_attribute"/>
+                <calculate id="default_modifier"/>
+            </sum>
+        </key>
+        <key id="1" default_value="1 point" value="formula = value (1)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="0"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="2" default_value="2 points" value="formula = value (2)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="1"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="3" default_value="4 points" value="formula = value (4)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="2"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="4" default_value="8 points" value="formula = value (8)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="3"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="5" default_value="12 points" value="formula = value (12)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="4"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="6" default_value="16 points" value="formula = value (16)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="5"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="7" default_value="20 points" value="formula = value (20)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="6"/>
+                </sum>
+            </sum>
+        </key>
+        <key id="8" default_value="24 points" value="formula = value (24)">
+            <sum>
+                <calculate_from id="attribute"/>
+                <sum>
+                    <calculate id="modifier"/>
+                    <number id="7"/>
+                </sum>
+            </sum>
+        </key>
+    </translator>
+    <character>
+        <hash_table id="attributes" singular="attribute" key_from_array="attributes" min_value="3" max_value="18" def_value="10"></hash_table>
+        <hash_table id="skills" singular="skill" modify_keys="True" keytable="skill_table" min_value="0" max_value="8" def_value="0" translate_value="gurps_translator"></hash_table>
+        <table id="advantages" singular="advantage" modify_keys="True" keytable="gift_table" ></table>
+        <table id="disadvantages" singular="disadvantage" modify_keys="True" keytable="flaw_table" ></table>
+        <calculation id="Basic speed" translate_value="basic_speed_translator"/>
+        <calculation id="Basic move" translate_value="basic_move_translator"/>
+        <calculation id="Dodge" translate_value="dodge_translator"/>
+        <calculation id="Thrust" attribute="Strength" translate_value="thrust_translator"/>
+        <calculation id="Swing" attribute="Strength" translate_value="swing_translator"/>
+    </character>
+    <creature>
+        <hash_table id="attributes" singular="attribute" key_from_array="attributes" min_value="3" max_value="18" def_value="10"></hash_table>
+        <hash_table id="skills" singular="skill" modify_keys="True" keytable="skill_table" min_value="0" max_value="8" def_value="0" translate_value="gurps_translator"></hash_table>
+        <table id="advantages" singular="advantage" modify_keys="True" keytable="gift_table" ></table>
+        <table id="disadvantages" singular="disadvantage" modify_keys="True" keytable="flaw_table" ></table>
+        <calculation id="Basic speed" translate_value="basic_speed_translator"/>
+        <calculation id="Basic move" translate_value="basic_move_translator"/>
+        <calculation id="Dodge" translate_value="dodge_translator"/>
+        <calculation id="Thrust" attribute="Strength" translate_value="thrust_translator"/>
+        <calculation id="Swing" attribute="Strength" translate_value="swing_translator"/>
+    </creature>
+    <key_table id="skill_table">
+        <key id="Acrobatics" attribute="Dexterity" modifier="-2" default_attribute="Dexterity" default_modifier="-6"/>
+        <key id="Acting" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Animal Handling" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Anthropology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Archaeology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Area Knowledge" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Armoury" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Astronomy" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Axe/Mace" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Battlesuit" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Beams" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Bicycling" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Biology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Blowpipe" attribute="Dexterity" modifier="-2" default_attribute="Dexterity" default_modifier="-6"/>
+        <key id="Boating" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Bow" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Brawling" attribute="Dexterity" modifier="0" default_attribute="Dexterity"/>
+        <key id="Broadsword" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Camouflage" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Cannon" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Carousing" attribute="Health" modifier="0" default_attribute="Health" default_modifier="-4"/>
+        <key id="Chemistry" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Climbing" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Computer Operation" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Computer Programming" attribute="Intelligence" modifier="0" default_attribute="Intelligence"/>
+        <key id="Crewman" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Criminology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Crossbow" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Diagnosis" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Diplomacy" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Disguise" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Diving Suit" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Driving" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Electronics Operation" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Electronics Repair" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Engineer" attribute="Intelligence" modifier="0" default_attribute="Intelligence"/>
+        <key id="Environment Suit" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Escape" attribute="Dexterity" modifier="-2" default_attribute="Dexterity" default_modifier="-6"/>
+        <key id="Explosives" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Fast-Talk" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="First Aid" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Flail" attribute="Dexterity" modifier="-2" default_attribute="Dexterity" default_modifier="-6"/>
+        <key id="Flamethrower" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Forgery" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Gambling" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Geology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Hiking" attribute="Health" modifier="0" default_attribute="Health" default_modifier="-5"/>
+        <key id="History" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Holdout" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Interrogation" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Intimidation" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Jumping" attribute="Dexterity" modifier="0" default_attribute="Dexterity"/>
+        <key id="Karate" attribute="Dexterity" modifier="-2" default_attribute="Dexterity"/>
+        <key id="Knife" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Law " attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Leadership" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Light Anti-Armor Weapon" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Literature" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Lockpicking" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Machine Gun" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Mathematics" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Mechanic" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Merchant" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Naturalist" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Navigation" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="NBC Suit" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Observation" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Occultism" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Philosophy" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Photography" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Physician" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-7"/>
+        <key id="Physics" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Pickpocket" attribute="Dexterity" modifier="-2" default_attribute="Dexterity" default_modifier="-6"/>
+        <key id="Piloting" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Pistol" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Polearm" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Psychology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Public Speaking" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Rapier" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Research" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Riding" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Rifle" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Savoir-Faire" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Scrounging" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-4"/>
+        <key id="Search" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Sex Appeal " attribute="Health" modifier="0" default_attribute="Health" default_modifier="-3"/>
+        <key id="Shadowing" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Shield" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Shortsword" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Shotgun" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Shuriken" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Smallsword" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Smuggling" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Sociology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Spear" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Staff" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Stealth" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Streetwise" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier=" -5"/>
+        <key id="Submachine Gun" attribute="Dexterity" modifier="0" default_attribute="Dexterity" default_modifier="-4"/>
+        <key id="Submarine" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier=""/>
+        <key id="Survival" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Swimming" attribute="Health" modifier="0" default_attribute="Health" default_modifier="-4"/>
+        <key id="Tactics" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Theology" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-6"/>
+        <key id="Throwing" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-3"/>
+        <key id="Tracking" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Traps" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+        <key id="Two-Handed Sword" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Vacc Suit" attribute="Dexterity" modifier="-1" default_attribute="Dexterity" default_modifier="-5"/>
+        <key id="Writing" attribute="Intelligence" modifier="0" default_attribute="Intelligence" default_modifier="-5"/>
+    </key_table>
+    <key_table id="gift_table">
+        <key id="Acute Hearing"/>
+        <key id="Acute Taste and Smell"/>
+        <key id="Acute Touch"/>
+        <key id="Acute Vision"/>
+        <key id="Ambidexterity"/>
+        <key id="Animal Empathy"/>
+        <key id="Catfall"/>
+        <key id="Combat Reflexes"/>
+        <key id="Danger Sense"/>
+        <key id="Daredevil"/>
+        <key id="Disease Resistant"/>
+        <key id="Double-Jointed"/>
+        <key id="Empathy"/>
+        <key id="Enhanced Block"/>
+        <key id="Enhanced Dodge"/>
+        <key id="Enhanced Parry"/>
+        <key id="Fearlessness"/>
+        <key id="Flexibility"/>
+        <key id="Hard to Kill"/>
+        <key id="High Pain Threshold"/>
+        <key id="Jumper"/>
+        <key id="Language Talent"/>
+        <key id="Luck"/>
+        <key id="Night Vision"/>
+        <key id="Perfect Balance"/>
+        <key id="Poison Resistant"/>
+    </key_table>
+    <key_table id="flaw_table">
+        <key id="Acrophobia"/>
+        <key id="Arachnophobia"/>
+        <key id="Bad Sight"/>
+        <key id="Bad Temper"/>
+        <key id="Bloodlus"/>
+        <key id="Code of Honor"/>
+        <key id="Curious"/>
+        <key id="Delusion"/>
+        <key id="Gluttony"/>
+        <key id="Greed"/>
+        <key id="Hard of Hearing"/>
+        <key id="Hemophobia"/>
+        <key id="Honesty"/>
+        <key id="Impulsiveness"/>
+        <key id="Intolerance"/>
+        <key id="Jealousy"/>
+        <key id="Lecherousness"/>
+        <key id="Obsession"/>
+        <key id="Overconfidence"/>
+        <key id="Pacifism"/>
+        <key id="Scotophobia"/>
+        <key id="Sense of Duty"/>
+        <key id="Triskaidekaphobia"/>
+        <key id="Truthfulness"/>
+        <key id="Unluckiness"/>
+        <key id="Vow"/>
+    </key_table>
+</system>

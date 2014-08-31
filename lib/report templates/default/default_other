@@ -1,0 +1,9 @@
+<reported>
+<div class='other'>
+<div class='other_name'><fudger>name</fudger></div>
+<fudger>type</fudger>
+<fudger>description</fudger>
+<each id='images'>
+<include>default_image</include>
+</each>
+</div>

@@ -1,0 +1,130 @@
+h2{
+    font-size:smaller;
+    clear:left;
+    float:left;
+    width: 98%;
+}
+h1{
+    clear:left;
+    float:left;
+    width: 98%;
+}
+.character {
+    background-color:silver;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.attributes_table {
+    width: 24%;
+
+}
+.skills_table {
+    width: 74%;
+    float:left;
+
+}
+.force_table {
+    width: 34%;
+    float:left;
+
+}
+.others_table {
+    width: 34%;
+    float:left;
+    clear:left;
+
+}
+.attributes_table td {
+    border: 1px solid black;
+    font-size:x-large;
+
+}
+.place {
+    background-color:#999999;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.image img {
+    margin:3px;
+    width: 98%;
+}
+div * .place {
+    background-color:#AAAAAA;
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.event {
+    background-color:olive;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.item {
+    background-color:red;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.religion {
+    background-color:purple;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.creature {
+    background-color:teal;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.other {
+    background-color:blue;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.character table{
+    border: 1px solid black;
+    width: 48%;
+    float:left;
+}
+.character_description {
+    float:left;
+    clear:left;
+}
+.character_name {
+    font-size:x-large;
+    clear:left;
+}
+.place_name {
+    font-size:x-large;
+    clear:left;
+}
+.event_name {
+    font-size:x-large;
+    clear:left;
+}
+.item_name {
+    font-size:x-large;
+    clear:left;
+}

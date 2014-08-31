@@ -1,0 +1,26 @@
+---
+final:
+- - identifier
+  - space
+  - what
+space:
+- " "
+identifier:
+- hungry
+- golden
+- red
+- drunken
+- lazy
+- thirsty
+
+what:
+- peasant
+- rooster
+- pig
+- noble
+- warrior
+- cow
+- dog
+- lamb
+- man
+- woman

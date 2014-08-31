@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-08 12:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/ui/fudger-gtk/fudger.ui:18
+msgid "Magic item"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:21 lib/ui/fudger-gtk/fudger.ui:35
+msgid "Other"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:32
+msgid "War"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:46
+msgid "Village"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:49
+msgid "City"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:52
+msgid "Castle"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:55
+msgid "Bar"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:66
+msgid "Irrelevant Character"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:69
+msgid "Minor Character"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:72
+msgid "Important Character"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:75
+msgid "Major Character"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:78
+msgid "Player Character"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:89
+msgid "Places"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:92
+msgid "Events"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:95
+msgid "Religion"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:98
+msgid "Importance"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:103
+msgid "Fudger"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:118
+msgid "_File"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:166
+msgid "Open _last"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:217
+msgid "_Edit"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:237
+msgid "_View"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:245
+msgid "Toolbars"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:269
+msgid "_Generators"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:281
+msgid "_Help"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:606
+msgid "Male"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:1191
+msgid "gtk-refresh"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:1346
+msgid "Start"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:1426
+msgid "End"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2018
+msgid "gtk-zoom-fit"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2032
+msgid "gtk-zoom-100"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2046
+msgid "gtk-zoom-in"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2060
+msgid "gtk-zoom-out"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2414
+msgid "gtk-add"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2695
+msgid "Illegal"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3246
+msgid "Preferences"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3257
+msgid "Automatic character name generation"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3273
+msgid "Automatic place name generation"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3295
+msgid "Link color"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3313
+msgid "Public color"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3395
+msgid "Campaign properties"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3409
+msgid "Campaign name"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3477
+msgid "<b>Names</b>"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3554
+msgid "Generate Reports"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3564
+msgid "Include GM only information"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3585
+msgid "Character"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3602
+msgid "Location"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3619
+msgid "Event"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3674
+msgid "Item"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:3704
+msgid "Campaign Report"
+msgstr ""

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<system id="Fudge">
+    <array id="attributes" modify_keys="True">
+        <default_key id="Strength"/>
+        <default_key id="Dexterity"/>
+        <default_key id="Intelligence"/>
+        <default_key id="Constitution"/>
+    </array>
+    <translator id="fudge_translator">
+        <key id="0" value="Terrible"/>
+        <key id="1" value="Poor"/>
+        <key id="2" value="Mediocre"/>
+        <key id="3" value="Fair"/>
+        <key id="4" value="Good"/>
+        <key id="5" value="Great"/>
+        <key id="6" value="Superb"/>
+        <key id="7" value="Legendary"/>
+        <key id="8" value="GM"/>
+    </translator>
+    <character>
+        <hash_table id="attributes" singular="attribute" key_from_array="attributes" min_value="0" max_value="8" def_value="3" translate_value="fudge_translator"></hash_table>
+        <hash_table id="skills" singular="skill" modify_keys="True" keytable="skill_table" min_value="0" max_value="8" def_value="3" translate_value="fudge_translator"></hash_table>
+        <table id="gifts" singular="gift" modify_keys="True" keytable="gift_table" ></table>
+        <table id="flaws" singular="flaw" modify_keys="True" keytable="flaw_table" ></table>
+    </character>
+    <creature>
+        <hash_table id="attributes" singular="attribute" key_from_array="attributes" min_value="0" max_value="8" def_value="3" translate_value="fudge_translator"></hash_table>
+        <hash_table id="skills" singular="skill" modify_keys="True" keytable="skill_table" min_value="0" max_value="8" def_value="3" translate_value="fudge_translator"></hash_table>
+        <table id="gifts" singular="gift" modify_keys="True" keytable="gift_table" ></table>
+        <table id="flaws" singular="flaw" modify_keys="True" keytable="flaw_table" ></table>
+    </creature>
+    <key_table id="skill_table">
+        <key id="Accounting"/>
+        <key id="Acrobatics"/>
+        <key id="Acting"/>
+        <key id="Aerial Acrobatics"/>
+        <key id="Aesthetics"/>
+        <key id="Alchemy"/>
+        <key id="Alien Customs"/>
+        <key id="Ambush"/>
+        <key id="Anatomy"/>
+        <key id="Animal Care"/>
+        <key id="Animal Lore"/>
+        <key id="Animal Training"/>
+        <key id="Antidotes"/>
+        <key id="Arcane Lore"/>
+        <key id="Armory"/>
+        <key id="Avoid Traps"/>
+        <key id="Axe"/>
+        <key id="Balance Skills"/>
+        <key id="Bamboozle"/>
+        <key id="Bar Etiquette"/>
+        <key id="Bargain"/>
+        <key id="Barroom Savvy"/>
+        <key id="Barter"/>
+        <key id="Basket Making"/>
+        <key id="Bee-keeping"/>
+        <key id="Begging"/>
+        <key id="Bluff"/>
+        <key id="Boating"/>
+        <key id="Boot-licking"/>
+        <key id="Bow"/>
+        <key id="Bowyer/Fletcher"/>
+        <key id="Breaking & Entering"/>
+        <key id="Bribery"/>
+        <key id="Bureaucracy"/>
+        <key id="Business Sense"/>
+        <key id="Camaraderie"/>
+        <key id="Camouflage"/>
+        <key id="Camping"/>
+        <key id="Carouse"/>
+        <key id="Carpenter"/>
+        <key id="Choosing just the right gift"/>
+        <key id="Choreography"/>
+        <key id="Climbing"/>
+        <key id="Communing with nature"/>
+        <key id="Composition"/>
+        <key id="Computer Build/Repair"/>
+        <key id="Computer Programming"/>
+        <key id="Computer Use"/>
+        <key id="Con"/>
+        <key id="Control Libido"/>
+        <key id="Cooking"/>
+        <key id="Cosmetology"/>
+        <key id="Costuming"/>
+        <key id="Courtly Ways"/>
+        <key id="Criminology"/>
+        <key id="Culinary Arts"/>
+        <key id="Cultures"/>
+        <key id="Dance"/>
+        <key id="Deactivate Traps"/>
+        <key id="Demolitions"/>
+        <key id="Detective Fiction"/>
+        <key id="Detect Lies"/>
+        <key id="Detect Traps"/>
+        <key id="Diagnosis"/>
+        <key id="Diplomacy"/>
+        <key id="Disguise"/>
+        <key id="Doctoring"/>
+        <key id="Dodge"/>
+        <key id="Drawing"/>
+        <key id="Driving"/>
+        <key id="Electronics"/>
+        <key id="Engineer"/>
+        <key id="Etiquette"/>
+        <key id="Evaluate Goods"/>
+        <key id="Exhort"/>
+        <key id="Fasting"/>
+        <key id="Fast-talk"/>
+        <key id="Fight"/>
+        <key id="Find Secret Passages"/>
+        <key id="First Aid"/>
+        <key id="Fishing"/>
+        <key id="Flattery"/>
+        <key id="Flirting"/>
+        <key id="Folklore"/>
+        <key id="Forage"/>
+        <key id="Forgery"/>
+        <key id="Fortune Telling"/>
+        <key id="Gambling"/>
+        <key id="Game Playing"/>
+        <key id="Geography"/>
+        <key id="Giving comfort"/>
+        <key id="Haggle"/>
+        <key id="Herb Lore"/>
+        <key id="Herb Preparation"/>
+        <key id="Herding"/>
+        <key id="Hide Traces"/>
+        <key id="History"/>
+        <key id="Hold your liquor"/>
+        <key id="Hunting"/>
+        <key id="Infiltrate"/>
+        <key id="Innkeeping"/>
+        <key id="Interrogate"/>
+        <key id="Interviewing"/>
+        <key id="Intimidate"/>
+        <key id="Intrigue"/>
+        <key id="Jester"/>
+        <key id="Jumping"/>
+        <key id="Knots"/>
+        <key id="Law"/>
+        <key id="Leatherworking"/>
+        <key id="Levitate"/>
+        <key id="Listening deeply"/>
+        <key id="Literary"/>
+        <key id="Literature"/>
+        <key id="Lockpicking"/>
+        <key id="Lying"/>
+        <key id="Make Amusing Faces or Noises"/>
+        <key id="Marketing"/>
+        <key id="Masonry"/>
+        <key id="Matrix Etiquette"/>
+        <key id="Mechanic"/>
+        <key id="Medicine"/>
+        <key id="Meditation"/>
+        <key id="Mimic Animal Noises"/>
+        <key id="Move Quietly"/>
+        <key id="Music"/>
+        <key id="Nature Lore"/>
+        <key id="Navigation"/>
+        <key id="Nursing"/>
+        <key id="Occultism"/>
+        <key id="Oratory"/>
+        <key id="Painting"/>
+        <key id="Pantomime"/>
+        <key id="Parley"/>
+        <key id="Patience"/>
+        <key id="Persuade"/>
+        <key id="Photography"/>
+        <key id="Pick Locks"/>
+        <key id="Pickpocketing"/>
+        <key id="Pick Up Languages"/>
+        <key id="Piloting"/>
+        <key id="Poisoning"/>
+        <key id="Pole-vaulting"/>
+        <key id="Political Situations"/>
+        <key id="Pottery"/>
+        <key id="Psychology"/>
+        <key id="Punmanship"/>
+        <key id="Quick-Draw"/>
+        <key id="Repair Scoutship Systems"/>
+        <key id="Repartee"/>
+        <key id="Research"/>
+        <key id="Riding"/>
+        <key id="Rituals"/>
+        <key id="Run"/>
+        <key id="Running"/>
+        <key id="Salesmanship"/>
+        <key id="Savoir-Faire"/>
+        <key id="Sculpting"/>
+        <key id="Seamanship"/>
+        <key id="Seduction"/>
+        <key id="Servant"/>
+        <key id="Shadowing"/>
+        <key id="Shady Contacts"/>
+        <key id="Shield"/>
+        <key id="Shiphandling"/>
+        <key id="Shopkeeping"/>
+        <key id="Sleight of Hand"/>
+        <key id="Smith"/>
+        <key id="Spell Casting"/>
+        <key id="Stealth"/>
+        <key id="Storytelling"/>
+        <key id="Street Etiquette"/>
+        <key id="Street Gossip"/>
+        <key id="Streetwise"/>
+        <key id="Surgery"/>
+        <key id="Survival"/>
+        <key id="Swimming"/>
+        <key id="Sword"/>
+        <key id="Tactics"/>
+        <key id="Tailor"/>
+        <key id="Tall Tales"/>
+        <key id="Teamster"/>
+        <key id="Tell Believable Whoppers"/>
+        <key id="Theater"/>
+        <key id="Theology"/>
+        <key id="Throwing"/>
+        <key id="Throwing"/>
+        <key id="Tracking"/>
+        <key id="TV SitCom Episodes"/>
+        <key id="Uplift Spirits"/>
+        <key id="Urban Survival"/>
+        <key id="Use Mind Control"/>
+        <key id="Use Superpower"/>
+        <key id="Use Telekinesis"/>
+        <key id="VeterinarianFarming"/>
+        <key id="Weaving"/>
+        <key id="Wildcraft"/>
+        <key id="Witty Insults"/>
+        <key id="Woodcraft"/>
+        <key id="Zero-G Maneuvering"/>
+    </key_table>
+    <key_table id="gift_table">
+    </key_table>
+    <key_table id="flaw_table">
+    </key_table>
+</system>

@@ -1,0 +1,17 @@
+<reported>
+<div class='place'>
+<div class='place_name'><fudger>name</fudger></div>
+<fudger>type</fudger><br>
+<fudger>description</fudger>
+<each id='images'>
+<include>default_image</include>
+</each>
+<h2>Characters</h2>
+<each id='characters'>
+<include>default_simple_character</include>
+</each>
+<h2>Places</h2>
+<children>
+<include>default_place</include>
+</children>
+</div>

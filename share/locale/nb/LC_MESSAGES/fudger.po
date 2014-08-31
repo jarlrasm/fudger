@@ -1,0 +1,311 @@
+# Norwegian Bokmal translations for Fudger package.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the Fudger package.
+# Jarl Sveinung Rasmussen <jarlrasm@fastmail.fm>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Fudger 0.1\n"
+"POT-Creation-Date: 2010-12-08 12:49+0100\n"
+"PO-Revision-Date: 2009-05-24 00:52+0200\n"
+"Last-Translator: Jarl Sveinung Rasmussen <jarlrasm@fastmail.fm>\n"
+"Language-Team: Norwegian Bokmal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/campaign.rb:29
+msgid "Campaign name"
+msgstr "Kampanjenavn"
+
+#: lib/campaign.rb:49 lib/campaign_element.rb:80
+msgid "Add description here"
+msgstr "Legg til beskrivelse her"
+
+#: lib/campaign_element.rb:33 lib/creature.rb:25
+msgid "Male character?"
+msgstr "Mannlig karakter?"
+
+#: lib/campaign_element.rb:81
+msgid "noname"
+msgstr "ingennavn"
+
+#: lib/creature.rb:20
+msgid "noone"
+msgstr "ingen"
+
+#: lib/event.rb:24
+msgid "peace and love"
+msgstr "fred og fordragelighet"
+
+#: lib/event.rb:25 lib/fudger.rb:61 lib/item.rb:23 lib/other.rb:23
+msgid "Other"
+msgstr "Annet"
+
+#: lib/fudger.rb:54
+msgid "Character"
+msgstr "Karakter"
+
+#: lib/fudger.rb:55
+msgid "Place"
+msgstr "Sted"
+
+#: lib/fudger.rb:56
+msgid "Event"
+msgstr "Hendelse"
+
+#: lib/fudger.rb:57
+msgid "Item"
+msgstr "Gjenstand"
+
+#: lib/fudger.rb:58
+msgid "Image"
+msgstr "Bilde"
+
+#: lib/fudger.rb:59
+msgid "Creature"
+msgstr "Vesen"
+
+#: lib/fudger.rb:60
+msgid "Religion"
+msgstr "Religion"
+
+#: lib/fudger.rb:122
+msgid "Error saving file"
+msgstr "Feil under lagring av fil"
+
+#: lib/fudger.rb:203
+msgid "Error loading file"
+msgstr "Feil under lasting av fil"
+
+#: lib/fudger.rb:244
+msgid "You have unsaved changes. Do you really want to close document?"
+msgstr "Du har endringer som ikke er lagret. Vil du virkelig lukke dokumentet?"
+
+#: lib/fudger.rb:268
+msgid "You have unsaved changes. Do you really want to quit?"
+msgstr "Du har endringer som ikke er lagret. Vil du virkelig avslutte?"
+
+#: lib/fudger.rb:286
+msgid "Checking for folders"
+msgstr "Ser etter mapper"
+
+#: lib/fudger.rb:288
+msgid "Loading systems"
+msgstr "Laster systemer"
+
+#: lib/fudger.rb:290
+msgid "Loading ui"
+msgstr "Laster brukergrensesnitt"
+
+#: lib/fudger.rb:292
+msgid "Loading settings"
+msgstr "Laster instillinger"
+
+#: lib/fudger.rb:296
+msgid "Loading name generators"
+msgstr "Laster navnegeneratorer"
+
+#: lib/fudger.rb:298
+msgid "Configuring ui"
+msgstr "Konfigurerer brukergrensesnitt"
+
+#: lib/fudger.rb:300
+msgid "Loading plugins"
+msgstr "Laster utvidelser"
+
+#: lib/fudger.rb:309
+msgid "Loading %s"
+msgstr "Laster %s"
+
+#: lib/fudger.rb:315
+msgid "Ready"
+msgstr "Klar"
+
+#: lib/image.rb:40
+msgid "noimage"
+msgstr "ingenbilde"
+
+#: lib/item.rb:22 lib/other.rb:22
+msgid "nothing"
+msgstr "ingenting"
+
+#: lib/place.rb:22
+msgid "nowhere"
+msgstr "ingensteds"
+
+#: lib/place.rb:23
+msgid "Village"
+msgstr "Landsby"
+
+#: lib/religion.rb:22
+msgid "godless"
+msgstr "gudløs"
+
+#: lib/report_generator.rb:36
+msgid "Report"
+msgstr "Rapport"
+
+#: lib/report_generator.rb:311
+msgid "January"
+msgstr "Januar"
+
+#: lib/report_generator.rb:311
+msgid "February"
+msgstr "Februar"
+
+#: lib/report_generator.rb:311
+msgid "March"
+msgstr "Mars"
+
+#: lib/report_generator.rb:311
+msgid "April"
+msgstr "April"
+
+#: lib/report_generator.rb:311
+msgid "May"
+msgstr "Mai"
+
+#: lib/report_generator.rb:311
+msgid "June"
+msgstr "Juni"
+
+#: lib/report_generator.rb:311
+msgid "July"
+msgstr "Juli"
+
+#: lib/report_generator.rb:312
+msgid "August"
+msgstr "August"
+
+#: lib/report_generator.rb:312
+msgid "September"
+msgstr "September"
+
+#: lib/report_generator.rb:312
+msgid "October"
+msgstr "Oktober"
+
+#: lib/report_generator.rb:312
+msgid "November"
+msgstr "November"
+
+#: lib/report_generator.rb:312
+msgid "December"
+msgstr "Desember"
+
+#~ msgid "Female"
+#~ msgstr "Kvinne"
+
+#~ msgid "Male"
+#~ msgstr "Mann"
+
+#~ msgid "Irrellevant"
+#~ msgstr "Uviktig"
+
+#~ msgid "Minor"
+#~ msgstr "Mindre viktig"
+
+#~ msgid "Important"
+#~ msgstr "Viktig"
+
+#~ msgid "Major"
+#~ msgstr "Svært viktig"
+
+#~ msgid "PC"
+#~ msgstr "Spillerkarakter"
+
+#~ msgid "Unknown"
+#~ msgstr "Ukjent"
+
+#~ msgid "Overview"
+#~ msgstr "Oversikt"
+
+#~ msgid "Characters"
+#~ msgstr "Karakterer"
+
+#~ msgid "Places"
+#~ msgstr "Steder"
+
+#~ msgid "Events"
+#~ msgstr "Hendelser"
+
+#~ msgid "Items"
+#~ msgstr "Gjenstander"
+
+#~ msgid "Images"
+#~ msgstr "Bilder"
+
+#~ msgid "Creatures"
+#~ msgstr "Vesener"
+
+#~ msgid "Religions"
+#~ msgstr "Religioner"
+
+#~ msgid "Save File"
+#~ msgstr "Lagre fil"
+
+#~ msgid "Fudger files"
+#~ msgstr "Fudger filer"
+
+#~ msgid "Campaign: %s, Characters: %i, Total Elements: %i"
+#~ msgstr "Kampanje: %s, Karakterer: %i, Totalt: %i"
+
+#~ msgid "Open File"
+#~ msgstr "Åpne fil"
+
+#~ msgid "something"
+#~ msgstr "et eller annet"
+
+#~ msgid ""
+#~ "Gtk version too old. Fudger require at least version %i.%i.%i. Installed "
+#~ "version is %i.%i.%i!"
+#~ msgstr ""
+#~ "Gtk er en for gammel version. Fudger trenger minst version %i.%i.%i."
+#~ "Installert version er %i.%i.%i!"
+
+#~ msgid ""
+#~ "You have unsaved changes. Do you really want to create a new campaign?"
+#~ msgstr ""
+#~ "Du har endringer som ikke er lagret. Vil du virkelig starte en ny "
+#~ "kampanje?"
+
+#~ msgid "translator-credits"
+#~ msgstr "Sveinung F."
+
+#~ msgid "View"
+#~ msgstr "Vis"
+
+#~ msgid "File"
+#~ msgstr "Fil"
+
+#~ msgid "Description"
+#~ msgstr "Beskrivelse"
+
+#~ msgid "Player Characters"
+#~ msgstr "Spillerkarakterer"
+
+#~ msgid "Major Characters"
+#~ msgstr "Hovedkarakterer"
+
+#~ msgid "Locations"
+#~ msgstr "Steder"
+
+#~ msgid "Name"
+#~ msgstr "Navn"
+
+#~ msgid "Value"
+#~ msgstr "Verdi"
+
+#~ msgid "Calculated"
+#~ msgstr "Utregnet"
+
+#~ msgid "Level"
+#~ msgstr "Nivå"
+
+#~ msgid "Public knowledge"
+#~ msgstr "Offentlig kunnskap"
+
+#~ msgid "GM knowledge"
+#~ msgstr "Spilleleder-kunnskap"

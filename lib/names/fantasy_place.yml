@@ -1,0 +1,51 @@
+---
+final:
+- - identifier
+  - what
+- - identifier
+  - what
+- - identifier
+  - what
+- - identifier
+  - what
+- - fantasy_male.yml
+  - ownership
+  - what
+- - fantasy_female.yml
+  - ownership
+  - what
+ownership:
+- "'s "
+what:
+- fort
+- keep
+- hold
+- forest
+- temple
+- stronghold
+- bane
+- glory
+- lake
+- hill
+- water
+- glade
+- dale
+- stone
+- watch
+- wonder
+- river
+identifier:
+- silver
+- eagle
+- round
+- gold
+- sunny
+- sunset
+- moon
+- ever
+- red
+- yellow
+- green
+- shadow
+- loud
+- deep

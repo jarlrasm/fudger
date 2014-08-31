@@ -1,0 +1,58 @@
+---
+final:
+- - begin
+  - end
+- - simple
+- - simple
+- - simple
+- - simple
+- - simple
+- - simple
+begin:
+- sky
+- cloud
+- dark
+- earth
+- light
+- space
+- ground
+- wind
+- tide
+- star
+- moon
+- planet
+end:
+- walker
+- fighter
+- strider
+- giver
+- healer
+- runner
+- sender
+- eater
+- crawler
+- fall
+- shine
+simple:
+- solo
+- armande
+- kappa
+- xarol
+- nooram
+- anjek
+- jonos
+- ski
+- rostoni
+- mepou
+- twilight
+- duine
+- ortis
+- leroun
+- senpai
+- thorin
+- traln
+- ferral
+- baralein
+- hanew
+- wuanera
+- talus

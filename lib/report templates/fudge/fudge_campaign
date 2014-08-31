@@ -1,0 +1,42 @@
+<include>default_overview</include>
+<h1>Player Characters</h1>
+<each id='characters'>
+<if statement='item.importance==4'>
+<include>fudge_character</include>
+</if>
+</each>
+<h1>Major Characters</h1>
+<each id='characters'>
+<if statement='item.importance==3 and @gm_only'>
+<include>fudge_character</include>
+</if>
+<if statement='item.importance==3 and not @gm_only'>
+<include>default_simple_character</include>
+</if>
+</each>
+<h1>Places</h1>
+<each id='places'>
+<if statement='item.parent==nil'>
+<include>default_place</include>
+</if>
+</each>
+<h1>Events</h1>
+<each id='events'>
+<if statement='item.parent==nil'>
+<include>default_event</include>
+</if>
+</each>
+<h1>Religions</h1>
+<each id='religions'>
+<if statement='item.parent==nil'>
+<include>default_religion</include>
+</if>
+</each>
+<h1>Creatures</h1>
+<each id='creatures'>
+<include>fudge_creature</include>
+</each>
+<h1>Other</h1>
+<each id='others'>
+<include>default_other</include>
+</each>

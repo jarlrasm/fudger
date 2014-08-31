@@ -1,0 +1,124 @@
+
+
+h2{
+    font-size:smaller;
+    clear:left;
+    float:left;
+    width: 98%;
+}
+h1{
+    clear:left;
+    float:left;
+    width: 98%;
+}
+.character {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+
+
+}
+.place {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.image img {
+    margin:3px;
+    width: 98%;
+}
+div * .place {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.event {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.item {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.other {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.religion {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.creature {
+    border: 1px solid black;
+    margin: 3px;
+    clear:left;
+    float:left;
+    width: 98%;
+    -moz-border-radius: 10px;
+}
+.character table{
+    border: 1px solid black;
+    width: 48%;
+    float:left;
+}
+.character_description {
+    float:left;
+    clear:left;
+}
+.character_name {
+    font-size:x-large;
+    clear:left;
+}
+.place_name {
+    font-size:x-large;
+    clear:left;
+}
+.event_name {
+    font-size:x-large;
+    clear:left;
+}
+.item_name {
+    font-size:x-large;
+    clear:left;
+}
+.image_name {
+    font-size:x-large;
+    clear:left;
+}
+.other_name {
+    font-size:x-large;
+    clear:left;
+}
+.creature_name {
+    font-size:x-large;
+    clear:left;
+}
+.religion_name {
+    font-size:x-large;
+    clear:left;
+}

@@ -1,0 +1,197 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2010-12-08 12:49+0100\n"
+"PO-Revision-Date: 2010-12-08 12:49+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: lib/campaign.rb:29
+msgid "Campaign name"
+msgstr ""
+
+#: lib/campaign.rb:49 lib/campaign_element.rb:80
+msgid "Add description here"
+msgstr ""
+
+#: lib/campaign_element.rb:33 lib/creature.rb:25
+msgid "Male character?"
+msgstr ""
+
+#: lib/campaign_element.rb:81
+msgid "noname"
+msgstr ""
+
+#: lib/creature.rb:20
+msgid "noone"
+msgstr ""
+
+#: lib/event.rb:24
+msgid "peace and love"
+msgstr ""
+
+#: lib/event.rb:25 lib/fudger.rb:61 lib/item.rb:23 lib/other.rb:23
+msgid "Other"
+msgstr ""
+
+#: lib/fudger.rb:54
+msgid "Character"
+msgstr ""
+
+#: lib/fudger.rb:55
+msgid "Place"
+msgstr ""
+
+#: lib/fudger.rb:56
+msgid "Event"
+msgstr ""
+
+#: lib/fudger.rb:57
+msgid "Item"
+msgstr ""
+
+#: lib/fudger.rb:58
+msgid "Image"
+msgstr ""
+
+#: lib/fudger.rb:59
+msgid "Creature"
+msgstr ""
+
+#: lib/fudger.rb:60
+msgid "Religion"
+msgstr ""
+
+#: lib/fudger.rb:122
+msgid "Error saving file"
+msgstr ""
+
+#: lib/fudger.rb:203
+msgid "Error loading file"
+msgstr ""
+
+#: lib/fudger.rb:244
+msgid "You have unsaved changes. Do you really want to close document?"
+msgstr ""
+
+#: lib/fudger.rb:268
+msgid "You have unsaved changes. Do you really want to quit?"
+msgstr ""
+
+#: lib/fudger.rb:286
+msgid "Checking for folders"
+msgstr ""
+
+#: lib/fudger.rb:288
+msgid "Loading systems"
+msgstr ""
+
+#: lib/fudger.rb:290
+msgid "Loading ui"
+msgstr ""
+
+#: lib/fudger.rb:292
+msgid "Loading settings"
+msgstr ""
+
+#: lib/fudger.rb:296
+msgid "Loading name generators"
+msgstr ""
+
+#: lib/fudger.rb:298
+msgid "Configuring ui"
+msgstr ""
+
+#: lib/fudger.rb:300
+msgid "Loading plugins"
+msgstr ""
+
+#: lib/fudger.rb:309
+msgid "Loading %s"
+msgstr ""
+
+#: lib/fudger.rb:315
+msgid "Ready"
+msgstr ""
+
+#: lib/image.rb:40
+msgid "noimage"
+msgstr ""
+
+#: lib/item.rb:22 lib/other.rb:22
+msgid "nothing"
+msgstr ""
+
+#: lib/place.rb:22
+msgid "nowhere"
+msgstr ""
+
+#: lib/place.rb:23
+msgid "Village"
+msgstr ""
+
+#: lib/religion.rb:22
+msgid "godless"
+msgstr ""
+
+#: lib/report_generator.rb:36
+msgid "Report"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "January"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "February"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "March"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "April"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "May"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "June"
+msgstr ""
+
+#: lib/report_generator.rb:311
+msgid "July"
+msgstr ""
+
+#: lib/report_generator.rb:312
+msgid "August"
+msgstr ""
+
+#: lib/report_generator.rb:312
+msgid "September"
+msgstr ""
+
+#: lib/report_generator.rb:312
+msgid "October"
+msgstr ""
+
+#: lib/report_generator.rb:312
+msgid "November"
+msgstr ""
+
+#: lib/report_generator.rb:312
+msgid "December"
+msgstr ""

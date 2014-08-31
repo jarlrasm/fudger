@@ -1,0 +1,13 @@
+<reported>
+<div class='event'>
+<div class='event_name'><fudger>name</fudger></div>
+<fudger>start</fudger>-<fudger>end</fudger><br>
+<fudger>type</fudger><br>
+<fudger>description</fudger>
+<each id='images'>
+<include>default_image</include>
+</each>
+<children>
+<include>default_event</include>
+</children>
+</div>

@@ -1,0 +1,33 @@
+<reported>
+<div class='creature'>
+<div class='creature_name'><fudger>name</fudger></div>
+<fudger>description</fudger>
+<each id='images'>
+<include>default_image</include>
+</each>
+<if statement='@gm_only'>
+
+<table>
+<th>Attributes</th>
+<hash-each id='attributes'>
+<tr><td>key</td><td>value</td></tr>
+</hash-each>
+</table>
+<table>
+<th>Skills</th>
+<hash-each id='skills'>
+<tr><td>key</td><td>value</td></tr>
+</hash-each>
+</table>
+<table>
+<th>Force skills</th>
+<hash-each id='force'>
+<tr><td>key</td><td>value</td></tr>
+</hash-each>
+</table>
+<hash-each id='others'>
+<tr><td>key</td><td>value</td></tr>
+</hash-each>
+</table>
+</if>
+</div>

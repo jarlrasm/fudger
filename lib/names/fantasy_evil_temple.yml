@@ -1,0 +1,21 @@
+---
+final:
+- - identifier
+  - space
+  - modifier
+  - space
+  - what
+space:
+- " "
+identifier:
+- temple of
+- church of
+- altar of
+modifier:
+- impending
+- painful
+- elemental
+what:
+- doom
+- death
+- evil

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Fudger
+Exec=fudger %f
+Icon=fudger
+Type=Application
+Terminal=false
+Categories=Application;Utility
+MimeType=text/fudger-campaign;

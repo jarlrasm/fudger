@@ -1,0 +1,8 @@
+<reported>
+<div class='creature'>
+<div class='creature_name'><fudger>name</fudger></div>
+<fudger>description</fudger>
+<each id='images'>
+<include>default_image</include>
+</each>
+</div>

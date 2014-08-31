@@ -1,0 +1,216 @@
+# Norwegian Bokmal translations for PACKAGE package.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# Jarl Sveinung Rasmussen <jarlrasm@fastmail.fm>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-12-08 12:51+0100\n"
+"PO-Revision-Date: 2009-05-24 01:21+0200\n"
+"Last-Translator: Jarl Sveinung Rasmussen <jarlrasm@fastmail.fm>\n"
+"Language-Team: Norwegian Bokmal\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: lib/ui/fudger-gtk/fudger.ui:18
+msgid "Magic item"
+msgstr "Magisk gjenstand"
+
+#: lib/ui/fudger-gtk/fudger.ui:21 lib/ui/fudger-gtk/fudger.ui:35
+msgid "Other"
+msgstr "Annet"
+
+#: lib/ui/fudger-gtk/fudger.ui:32
+msgid "War"
+msgstr "Krig"
+
+#: lib/ui/fudger-gtk/fudger.ui:46
+msgid "Village"
+msgstr "Landsby"
+
+#: lib/ui/fudger-gtk/fudger.ui:49
+msgid "City"
+msgstr "By"
+
+#: lib/ui/fudger-gtk/fudger.ui:52
+msgid "Castle"
+msgstr "Slott"
+
+#: lib/ui/fudger-gtk/fudger.ui:55
+msgid "Bar"
+msgstr "Bar"
+
+#: lib/ui/fudger-gtk/fudger.ui:66
+msgid "Irrelevant Character"
+msgstr "Uviktig karakter"
+
+#: lib/ui/fudger-gtk/fudger.ui:69
+msgid "Minor Character"
+msgstr "Mindre viktig karakter"
+
+#: lib/ui/fudger-gtk/fudger.ui:72
+msgid "Important Character"
+msgstr "Viktig karakter"
+
+#: lib/ui/fudger-gtk/fudger.ui:75
+msgid "Major Character"
+msgstr "Svært viktig karakter"
+
+#: lib/ui/fudger-gtk/fudger.ui:78
+msgid "Player Character"
+msgstr "Spillerkarakter"
+
+#: lib/ui/fudger-gtk/fudger.ui:89
+msgid "Places"
+msgstr "Steder"
+
+#: lib/ui/fudger-gtk/fudger.ui:92
+msgid "Events"
+msgstr "Hendelser"
+
+#: lib/ui/fudger-gtk/fudger.ui:95
+msgid "Religion"
+msgstr "Religion"
+
+#: lib/ui/fudger-gtk/fudger.ui:98
+msgid "Importance"
+msgstr "Viktighet"
+
+#: lib/ui/fudger-gtk/fudger.ui:103
+msgid "Fudger"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:118
+msgid "_File"
+msgstr "_Fil"
+
+#: lib/ui/fudger-gtk/fudger.ui:166
+msgid "Open _last"
+msgstr "Åpne _siste"
+
+#: lib/ui/fudger-gtk/fudger.ui:217
+msgid "_Edit"
+msgstr "R_ediger"
+
+#: lib/ui/fudger-gtk/fudger.ui:237
+msgid "_View"
+msgstr "_Vis"
+
+#: lib/ui/fudger-gtk/fudger.ui:245
+msgid "Toolbars"
+msgstr "Verktøylinjer"
+
+#: lib/ui/fudger-gtk/fudger.ui:269
+msgid "_Generators"
+msgstr "_Generatorer"
+
+#: lib/ui/fudger-gtk/fudger.ui:281
+msgid "_Help"
+msgstr "_Hjelp"
+
+#: lib/ui/fudger-gtk/fudger.ui:606
+msgid "Male"
+msgstr "Mann"
+
+#: lib/ui/fudger-gtk/fudger.ui:1191
+msgid "gtk-refresh"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:1346
+msgid "Start"
+msgstr "Begynnelse"
+
+#: lib/ui/fudger-gtk/fudger.ui:1426
+msgid "End"
+msgstr "Slutt"
+
+#: lib/ui/fudger-gtk/fudger.ui:2018
+msgid "gtk-zoom-fit"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2032
+msgid "gtk-zoom-100"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2046
+msgid "gtk-zoom-in"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2060
+msgid "gtk-zoom-out"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2414
+msgid "gtk-add"
+msgstr ""
+
+#: lib/ui/fudger-gtk/fudger.ui:2695
+msgid "Illegal"
+msgstr "Ulovlig"
+
+#: lib/ui/fudger-gtk/fudger.ui:3246
+msgid "Preferences"
+msgstr "Brukervalg"
+
+#: lib/ui/fudger-gtk/fudger.ui:3257
+msgid "Automatic character name generation"
+msgstr "Automatisk navn for karakterer"
+
+#: lib/ui/fudger-gtk/fudger.ui:3273
+msgid "Automatic place name generation"
+msgstr "Automatisk navn for steder"
+
+#: lib/ui/fudger-gtk/fudger.ui:3295
+msgid "Link color"
+msgstr "Link farge"
+
+#: lib/ui/fudger-gtk/fudger.ui:3313
+msgid "Public color"
+msgstr "Offentlig kunnskap farge"
+
+#: lib/ui/fudger-gtk/fudger.ui:3395
+msgid "Campaign properties"
+msgstr "Kampanje egenskaper"
+
+#: lib/ui/fudger-gtk/fudger.ui:3409
+msgid "Campaign name"
+msgstr "Kampanjenavn"
+
+#: lib/ui/fudger-gtk/fudger.ui:3477
+msgid "<b>Names</b>"
+msgstr "<b>Navn</b>"
+
+#: lib/ui/fudger-gtk/fudger.ui:3554
+msgid "Generate Reports"
+msgstr "Lag rapporter"
+
+#: lib/ui/fudger-gtk/fudger.ui:3564
+msgid "Include GM only information"
+msgstr "Inkluder informasjon for spilleleder"
+
+#: lib/ui/fudger-gtk/fudger.ui:3585
+msgid "Character"
+msgstr "Karakter"
+
+#: lib/ui/fudger-gtk/fudger.ui:3602
+msgid "Location"
+msgstr "Sted"
+
+#: lib/ui/fudger-gtk/fudger.ui:3619
+msgid "Event"
+msgstr "Hendelse"
+
+#: lib/ui/fudger-gtk/fudger.ui:3674
+msgid "Item"
+msgstr "Gjenstand"
+
+#: lib/ui/fudger-gtk/fudger.ui:3704
+msgid "Campaign Report"
+msgstr "Kampanjerapport"
+
+#~ msgid "Pick a Color"
+#~ msgstr "Velg en farge"

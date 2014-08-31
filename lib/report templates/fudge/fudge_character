@@ -1,0 +1,38 @@
+<reported>
+<div class='character'>
+<div class='character_name'><fudger>name</fudger></div>
+<if statement='item.gender==0'>Male</if>
+<if statement='item.gender==1'>Female</if></br>
+<fudger>age</fudger><br>
+<table>
+<th>Attributes</th>
+<hash-each id='attributes'>
+<tr><td>key</td><td>value</td></tr>
+</hash-each>
+</table>
+<table>
+<th>Skills</th>
+<hash-each id='skills'>
+<tr><td>key</td><td>value</td></tr>
+</hash-each>
+</table>
+<table>
+<th>Gifts</th>
+<table-each id='gifts'>
+<tr><td>value</td></tr>
+</table-each>
+</table>
+<table>
+<th>Flaws</th>
+<table-each id='flaws'>
+<tr><td>value</td></tr>
+</table-each>
+</table>
+<fudger>description</fudger>
+<each id='items'>
+<include>default_item</include>
+</each>
+<each id='images'>
+<include>default_image</include>
+</each>
+</div>

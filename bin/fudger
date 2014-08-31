@@ -1,0 +1,31 @@
+#!/usr/bin/env ruby
+#    This file is part of Fudger.
+#
+#    Fudger is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    Fudger is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with Fudger.  If not, see <http://www.gnu.org/licenses/>.
+def find_fudger(list)
+  list.each do|dir|
+    if File.exists?(dir+"/fudger.rb")
+      puts "Found fudger at: "+dir
+      return dir
+    end
+  end
+  return nil
+end
+dir=find_fudger([File.dirname(__FILE__)+"/../lib",File.dirname(__FILE__)+"/../lib/Fudger"]+ARGV)
+if dir!=nil
+  $:<<dir
+  Kernel.load(dir+"/fudger.rb")
+else
+  puts "Can't find fudger"
+end

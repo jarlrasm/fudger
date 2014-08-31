@@ -1,0 +1,6 @@
+text/fudger-campaign:
+	description=Fudger Campaign
+	default_action_type=application
+	short_list_application_ids_for_novice_user_level=fudger
+	icon_filename=gnome-mime-text-fudger-campaign
+	category=Documents/Data

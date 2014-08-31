@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : starwarsd6.xml.xml
+    Created on : February 19, 2011, 4:46 PM
+    Author     : jarl
+    Description:
+        Purpose of the document follows.
+-->
+
+<system id="Star Wars D6" css="star_wars_report.css">
+    <array id="attributes" modify_keys="False">
+        <default_key id="Strength"/>
+        <default_key id="Dexterity"/>
+        <default_key id="Perception"/>
+        <default_key id="Knowledge"/>
+        <default_key id="Technical"/>
+        <default_key id="Mechanical"/>
+    </array>
+    <array id="other" modify_keys="False">
+        <default_key id="Character points"/>
+        <default_key id="Force points"/>
+    </array>
+    <array id="force" modify_keys="False">
+        <default_key id="Sense"/>
+        <default_key id="Control"/>
+        <default_key id="Alter"/>
+    </array>
+    <translator id="sw_translator">
+        <key id="1" value="1d"/>
+        <key id="2" value="1d+1"/>
+        <key id="3" value="1d+2"/>
+        <key id="4" value="2d"/>
+        <key id="5" value="2d+1"/>
+        <key id="6" value="2d+2"/>
+        <key id="7" value="3d"/>
+        <key id="8" value="3d+1"/>
+        <key id="9" value="3d+2"/>
+        <key id="10" value="4d"/>
+        <key id="11" value="4d+1"/>
+        <key id="12" value="4d+2"/>
+        <key id="13" value="5d"/>
+        <key id="14" value="5d+1"/>
+        <key id="15" value="5d+2"/>
+        <key id="16" value="6d"/>
+        <key id="17" value="6d+1"/>
+        <key id="18" value="6d+2"/>
+        <key id="19" value="7d"/>
+        <key id="20" value="7d+1"/>
+        <key id="21" value="7d+2"/>
+        <key id="22" value="8d"/>
+        <key id="23" value="8d+1"/>
+        <key id="24" value="8d+2"/>
+        <key id="25" value="9d"/>
+        <key id="26" value="9d+1"/>
+        <key id="27" value="9d+2"/>
+        <key id="28" value="10d"/>
+        <key id="29" value="10d+1"/>
+        <key id="30" value="10d+2"/>
+        <key id="31" value="11d"/>
+    </translator>
+    <translator id="skill_translator" key_table="skill_table">
+        <key id="0" default_value="+0" value="value">
+            <translate translate_value="sw_translator">
+               <calculate_from id="attribute"/>
+            </translate>
+        </key>
+        <key id="1" default_value="+1" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="1"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="2" default_value="+2" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="2"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="3" default_value="+1d" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="3"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="4" default_value="+1d+1" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="4"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="5" default_value="+1d+2" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="5"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="6" default_value="+2d" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="6"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="7" default_value="+2d+1" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="7"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="8" default_value="+2d+2" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="8"/>
+                </sum>
+            </translate>
+        </key>
+        <key id="9" default_value="+3d" value="value">
+            <translate translate_value="sw_translator">
+                <sum>
+                    <calculate_from id="attribute"/>
+                    <number id="9"/>
+                </sum>
+            </translate>
+        </key>
+    </translator>
+    <character>
+        <hash_table id="attributes" singular="attribute" key_from_array="attributes" min_value="1" max_value="21" def_value="4" translate_value="sw_translator"></hash_table>
+        <hash_table id="skills" singular="skill" modify_keys="True" keytable="skill_table" min_value="0" max_value="9" def_value="0" translate_value="skill_translator"></hash_table>
+        <hash_table id="force" singular="force" key_from_array="force" min_value="0" max_value="31" def_value="0" translate_value="sw_translator"></hash_table>
+        <hash_table id="others" singular="other" key_from_array="other" min_value="0" max_value="10" def_value="1"></hash_table>
+
+    </character>
+    <creature>
+        <hash_table id="attributes" singular="attribute" key_from_array="attributes" min_value="1" max_value="21" def_value="4" translate_value="sw_translator"></hash_table>
+        <hash_table id="skills" singular="skill" modify_keys="True" keytable="skill_table" min_value="0" max_value="9" def_value="0" translate_value="skill_translator"></hash_table>
+        <hash_table id="force" singular="force" key_from_array="force" min_value="0" max_value="31" def_value="0" translate_value="sw_translator"></hash_table>
+         <hash_table id="others" singular="other" key_from_array="other" min_value="0" max_value="10" def_value="1"></hash_table>
+ </creature>
+    <key_table id="skill_table">
+        <key id="Blaster" attribute="Dexterity"/>
+    </key_table>
+   </system>

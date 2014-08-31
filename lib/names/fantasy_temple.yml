@@ -1,0 +1,32 @@
+---
+final:
+- - identifier
+  - space
+  - modifier
+  - space
+  - what
+- - modifier
+  - space
+  - identifier
+  - space
+  - what
+space:
+- " "
+identifier:
+- temple of
+- church of
+- altar of
+modifier:
+- supreme
+- glorious
+- immortal
+- divine
+- heavenly
+what:
+- might
+- thunder
+- sunshine
+- moonlight
+- love
+- glory
+- teaching

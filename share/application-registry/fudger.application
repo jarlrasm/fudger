@@ -1,0 +1,7 @@
+fudger
+	command=fudger
+	name=Fudger
+	can_open_multiple_files=false
+	expects_uris=false
+	requires_terminal=false
+	mime_types=text/fudger-campaign

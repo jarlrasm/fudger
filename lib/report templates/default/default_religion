@@ -1,0 +1,11 @@
+<reported>
+<div class='religion'>
+<div class='religion_name'><fudger>name</fudger></div>
+<fudger>description</fudger>
+<each id='images'>
+<include>default_image</include>
+</each>
+<children>
+<include>default_religion</include>
+</children>
+</div>

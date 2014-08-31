@@ -1,0 +1,14 @@
+<reported>
+<div class='character'>
+<div class='character_name'><fudger>name</fudger></div>
+<if statement='item.gender==0'>Male</if>
+<if statement='item.gender==1'>Female</if></br>
+<fudger>age</fudger><br>
+<fudger>description</fudger>
+<each id='items'>
+<include>default_item</include>
+</each>
+<each id='images'>
+<include>default_image</include>
+</each>
+</div>
